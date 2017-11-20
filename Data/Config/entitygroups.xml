@@ -216,9 +216,7 @@
 		<entity name="sanZombieBodyBuilder" prob="0.03"/>
 		<entity name="sanZombieCrazed" prob="0.03"/>
 		<entity name="sanZombiePrisoner" prob="0.03"/>
-		<entity name="zombieHorny" prob="0.03"/>
 		<entity name="zombieScared" prob="0.05"/>
-		<entity name="zombieDitz" prob="0.03"/>
 		<entity name="CuriousGeorge" prob="0.01"/>
 	</entitygroup>
 	<entitygroup name="ZombiesNight">
@@ -275,9 +273,7 @@
 		<entity name="sanZombieBodyBuilder" prob="0.03"/>
 		<entity name="sanZombieCrazed" prob="0.03"/>
 		<entity name="sanZombiePrisoner" prob="0.03"/>
-		<entity name="zombieHorny" prob="0.03"/>
 		<entity name="zombieScared" prob="0.05"/>
-		<entity name="zombieDitz" prob="0.03"/>
 		<entity name="CuriousGeorge" prob="0.01"/>
 		<entity name="zombieFatHawaiian" prob="0.3"/>
 	</entitygroup>
@@ -297,9 +293,7 @@
 		<entity name="zombieSteveCrawler"/>
 		<entity name="zombieFatCop"/>
 		<entity name="zombieElectricUtilityWorker" prob="0.15"/>
-		<entity name="zombieHorny" prob="0.03"/>
 		<entity name="zombieScared" prob="0.05"/>
-		<entity name="zombieDitz" prob="0.03"/>
 		<entity name="CuriousGeorge" prob="0.01"/>
 		<entity name="zombieFatHawaiian"/>
 		<entity name="zombieFemaleFat"/>
@@ -454,9 +448,7 @@
 		<entity name="sanZombieBodyBuilder" prob="0.03"/>
 		<entity name="sanZombieCrazed" prob="0.03"/>
 		<entity name="sanZombiePrisoner" prob="0.03"/>
-		<entity name="zombieHorny" prob="0.03"/>
 		<entity name="zombieScared" prob="0.05"/>
-		<entity name="zombieDitz" prob="0.03"/>
 		<entity name="CuriousGeorge" prob="0.01"/>
 	</entitygroup>
 	<entitygroup name="ZombiesWastelandNightNoBears">
@@ -518,9 +510,7 @@
 		<entity name="sanZombieBodyBuilder" prob="0.03"/>
 		<entity name="sanZombieCrazed" prob="0.03"/>
 		<entity name="sanZombiePrisoner" prob="0.03"/>
-		<entity name="zombieHorny" prob="0.03"/>
 		<entity name="zombieScared" prob="0.05"/>
-		<entity name="zombieDitz" prob="0.03"/>
 		<entity name="CuriousGeorge" prob="0.01"/>
 	</entitygroup>
 	<entitygroup name="ZombiesWastelandNight2">
@@ -581,9 +571,7 @@
 		<entity name="sanZombieBodyBuilder" prob="0.03"/>
 		<entity name="sanZombieCrazed" prob="0.03"/>
 		<entity name="sanZombiePrisoner" prob="0.03"/>
-		<entity name="zombieHorny" prob="0.03"/>
 		<entity name="zombieScared" prob="0.05"/>
-		<entity name="zombieDitz" prob="0.03"/>
 		<entity name="CuriousGeorge" prob="0.01"/>
 	</entitygroup>
 	<entitygroup name="ZombiesWastelandNight2NoBears">
@@ -644,9 +632,7 @@
 		<entity name="sanZombieBodyBuilder" prob="0.03"/>
 		<entity name="sanZombieCrazed" prob="0.03"/>
 		<entity name="sanZombiePrisoner" prob="0.03"/>
-		<entity name="zombieHorny" prob="0.03"/>
 		<entity name="zombieScared" prob="0.05"/>
-		<entity name="zombieDitz" prob="0.03"/>
 		<entity name="CuriousGeorge" prob="0.01"/>
 	</entitygroup>
 	<entitygroup name="ZombiesHoard">
@@ -703,9 +689,7 @@
 		<entity name="sanZombieBodyBuilder" prob="0.03"/>
 		<entity name="sanZombieCrazed" prob="0.03"/>
 		<entity name="sanZombiePrisoner" prob="0.03"/>
-		<entity name="zombieHorny" prob="0.03"/>
 		<entity name="zombieScared" prob="0.05"/>
-		<entity name="zombieDitz" prob="0.03"/>
 		<entity name="CuriousGeorge" prob="0.01"/>
 		<entity name="valZombieBruteBoss" prob="0.03"/>
 		<entity name="valZombieBrute" prob="0.03"/>
