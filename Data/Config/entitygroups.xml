@@ -133,7 +133,6 @@
 		<entity name="badZombieCaitlin"/>
 		<entity name="valZombieRaveReaper" prob="0.3"/>
 		<entity name="sanZombieCpl" prob="0.3"/>
-		<entity name="valZombieBigBitch" prob="0.3"/>
 		<entity name="sanZombieBanditSentry" prob="0.3"/>
 		<entity name="sanZombieBikerChick" prob="0.3"/>
 	</entitygroup>
@@ -206,7 +205,6 @@
 		<entity name="badZombieCaitlin"  prob="0.3"/>
 		<entity name="valZombieRaveReaper" prob="0.03"/>
 		<entity name="sanZombieCpl" prob="0.03"/>
-		<entity name="valZombieBigBitch" prob="0.03"/>
 		<entity name="sanZombieBanditSentry" prob="0.03"/>
 		<entity name="sanZombieBikerChick" prob="0.03"/>
 		<entity name="sanZombieBanditRaider" prob="0.03"/>
@@ -266,7 +264,6 @@
 		<entity name="badZombieCaitlin"  prob="0.3"/>
 		<entity name="valZombieRaveReaper" prob="0.03"/>
 		<entity name="sanZombieCpl" prob="0.03"/>
-		<entity name="valZombieBigBitch" prob="0.03"/>
 		<entity name="sanZombieBanditSentry" prob="0.03"/>
 		<entity name="sanZombieBikerChick" prob="0.03"/>
 		<entity name="sanZombieBanditRaider" prob="0.03"/>
@@ -446,7 +443,6 @@
 		<entity name="badZombieCaitlin"  prob="0.3"/>
 		<entity name="valZombieRaveReaper" prob="0.03"/>
 		<entity name="sanZombieCpl" prob="0.03"/>
-		<entity name="valZombieBigBitch" prob="0.03"/>
 		<entity name="sanZombieBanditSentry" prob="0.03"/>
 		<entity name="sanZombieBikerChick" prob="0.03"/>
 		<entity name="sanZombieBanditRaider" prob="0.03"/>
@@ -511,7 +507,6 @@
 		<entity name="badZombieCaitlin"  prob="0.3"/>
 		<entity name="valZombieRaveReaper" prob="0.03"/>
 		<entity name="sanZombieCpl" prob="0.03"/>
-		<entity name="valZombieBigBitch" prob="0.03"/>
 		<entity name="sanZombieBanditSentry" prob="0.03"/>
 		<entity name="sanZombieBikerChick" prob="0.03"/>
 		<entity name="sanZombieBanditRaider" prob="0.03"/>
@@ -575,7 +570,6 @@
 		<entity name="badZombieCaitlin"  prob="0.3"/>
 		<entity name="valZombieRaveReaper" prob="0.03"/>
 		<entity name="sanZombieCpl" prob="0.03"/>
-		<entity name="valZombieBigBitch" prob="0.03"/>
 		<entity name="sanZombieBanditSentry" prob="0.03"/>
 		<entity name="sanZombieBikerChick" prob="0.03"/>
 		<entity name="sanZombieBanditRaider" prob="0.03"/>
@@ -639,7 +633,6 @@
 		<entity name="badZombieCaitlin"  prob="0.3"/>
 		<entity name="valZombieRaveReaper" prob="0.03"/>
 		<entity name="sanZombieCpl" prob="0.03"/>
-		<entity name="valZombieBigBitch" prob="0.03"/>
 		<entity name="sanZombieBanditSentry" prob="0.03"/>
 		<entity name="sanZombieBikerChick" prob="0.03"/>
 		<entity name="sanZombieBanditRaider" prob="0.03"/>
@@ -699,7 +692,6 @@
 		<entity name="badZombieCaitlin"  prob="0.3"/>
 		<entity name="valZombieRaveReaper" prob="0.03"/>
 		<entity name="sanZombieCpl" prob="0.03"/>
-		<entity name="valZombieBigBitch" prob="0.03"/>
 		<entity name="sanZombieBanditSentry" prob="0.03"/>
 		<entity name="sanZombieBikerChick" prob="0.03"/>
 		<entity name="sanZombieBanditRaider" prob="0.03"/>
