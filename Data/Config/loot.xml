@@ -204,7 +204,6 @@
 			<block name="humVee" prob="0.05"/>
 			<block name="m1Abrams" prob="0.015"/>
 			<block name="gunship" prob="0.005"/>
-			<block name="gunshipMusic" prob="0.005"/>
 			<block name="aPC" prob="0.015"/>
 			<block name="classicCar01" prob="0.15"/>
 			<block name="classicCar03" prob="0.15"/>
@@ -328,7 +327,6 @@
 			<block name="humVee" prob="0.05"/>
 			<block name="m1Abrams" prob="0.015"/>
 			<block name="gunship" prob="0.005"/>
-			<block name="gunshipMusic" prob="0.005"/>
 			<block name="aPC" prob="0.015"/>
 			<block name="classicCar01" prob="0.15"/>
 			<block name="classicCar03" prob="0.15"/>
@@ -686,7 +684,6 @@
 		<item name="ironPaperClips" count="1,6"/>
 		<item name="ironWeight"/>
 		<item name="ironHinge"/>
-		<item name="trophy3"/>
 		<item name="ironHairSpray"/>
 		<item name="ironScissors"/>
 		<item name="padlock"/>
@@ -1603,7 +1600,7 @@
 		<item name="paint" count="20,80" prob="0.15"/>
 		<item name="assortedDyes" count="5,20" prob="0.15"/>
 		<item group="cupboardCookbooks" count="1" prob="0.25"/>
-		<item name="Twine" count="1,5"/>
+		<item name="Twine" count="1,3"/>
 		<item name="nail" count="1,10"/>
 		<item name="cookingPot" count="1" prob="0.15"/>
 		<item name="cookingGrill" count="1" prob="0.15"/>
@@ -1644,7 +1641,7 @@
 		<item group="trophyGroup"/>
 		<item name="candleStick"/>
 		<item name="bowl" count="1,2"/>
-		<item name="Twine" count="1,5"/>
+		<item name="Twine" count="1,3"/>
 		<item name="dinnerPlate" count="1,2"/>
 		<item name="glassCTRSheet"/>
 		<item name="gunPowder" count="10,30"/>
@@ -1904,7 +1901,7 @@
 		<item name="Crowbar" prob="0.15"/>
 		<item name="lugWrench" prob="0.25"/>
 		<item name="pipeWrench" prob="0.15"/>
-		<item name="Twine" count="1,10"/>
+		<item name="Twine" count="1,5"/>
 		<item name="boxNails" count="1,4"/>
 	</lootgroup>
 	<lootgroup name="garbage">
@@ -2136,7 +2133,7 @@
 		<item name="nail" count="1,10"/>
 		<item group="householdQuestItems" prob="0.25"/>
 		<item name="inkPen" prob="0.12"/>
-		<item name="Twine" count="1,5"/>
+		<item name="Twine" count="1,3"/>
 	</lootcontainer>
 	<!-- garbage-->
 	<lootcontainer id="2" count="0,2" size="4,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate">
@@ -2154,7 +2151,7 @@
 		<item name="paint" count="10,80" prob="0.15"/>
 		<item name="assortedDyes" count="3,10" prob="0.15"/>
 		<item group="cupboardCookbooks" count="1" prob="0.15"/>
-		<item name="Twine" count="1,5"/>
+		<item name="Twine" count="1,3"/>
 		<item name="cookingPot" count="1" prob="0.15"/>
 		<item name="cookingGrill" count="1" prob="0.15"/>
 		<item name="emptyJar" count="1,4"/>
@@ -2212,7 +2209,7 @@
 		<item group="householdQuestItems" prob="0.28"/>
 		<item name="rollingPaper" count="1,2" prob="0.18"/>
 		<item name="Weed" count="1,2" prob="0.18"/>
-		<item name="Twine" count="1,5"/>
+		<item name="Twine" count="1,3"/>
 		<item name="boxNails" count="1,2"/>
 	</lootcontainer>
 	<!-- medicine cabinets -->
@@ -2228,7 +2225,7 @@
 		<item name="paint" count="10,80" prob="0.15"/>
 		<item name="assortedDyes" count="3,10" prob="0.15"/>
 		<item group="cupboardCookbooks" count="1" prob="0.15"/>
-		<item name="Twine" count="1,5"/>
+		<item name="Twine" count="1,3"/>
 		<item name="cookingPot" count="1" prob="0.15"/>
 		<item name="cookingGrill" count="1" prob="0.15"/>
 		<item name="emptyJar" count="1,4"/>
@@ -2333,7 +2330,7 @@
 		<item name="paintTool" prob="0.005"/>
 		<item name="paintMagazineMetal" prob="0.03"/>
 		<item group="electricalDevices" prob="0.05"/>
-		<item name="Twine" count="1,5"/>
+		<item name="Twine" count="1,3"/>
 		<item group="flares" prob="0.01"/>
 		<item group="gunparts"  count="1" prob="0.4"/>
 		<item name="boxNails" count="1,2"/>
@@ -2595,7 +2592,7 @@
 		<item group="junkPersonal"/>
 	</lootcontainer>
 	<!-- minibike storage -->
-	<lootcontainer id="62" count="0" size="8,14" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
+	<lootcontainer id="62" count="0" size="8,10" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
 	</lootcontainer>
 	<!-- mountain man loot -->
 	<lootcontainer id="63" count="1" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
