@@ -7285,16 +7285,12 @@
 	<SoundDataNode name="traderdislikegreeting">
 		<AudioSource name="Sounds/AudioSource_VO"/>
 		<Noise ID="1" range="4" volume="7" time="5" muffled_when_crouched="0.5"/>
-		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_greeting_01"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_greeting_02"/>
-		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_greeting_03"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_greeting_04"/>
-		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_greeting_05"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_greeting_06"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_greeting_07"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_greeting_08"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_greeting_09"/>
-		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_greeting_10"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_greeting_11"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_greeting_12"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_greeting_13"/>
@@ -7312,11 +7308,9 @@
 	<SoundDataNode name="traderdislikesaleaccepted">
 		<AudioSource name="Sounds/AudioSource_VO"/>
 		<Noise ID="1" range="4" volume="7" time="5" muffled_when_crouched="0.5"/>
-		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_sale_accepted_01"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_sale_accepted_02"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_sale_accepted_03"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_sale_accepted_04"/>
-		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_sale_accepted_05"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_sale_accepted_06"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_sale_accepted_07"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_sale_accepted_08"/>
@@ -7331,10 +7325,7 @@
 		<AudioSource name="Sounds/AudioSource_VO"/>
 		<Noise ID="1" range="4" volume="7" time="5" muffled_when_crouched="0.5"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_sale_declined_01"/>
-		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_sale_declined_02"/>
-		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_sale_declined_03"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_sale_declined_04"/>
-		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_sale_declined_05"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_sale_declined_06"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_sale_declined_07"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Dislike/trader_male_dislike_sale_declined_08"/>
@@ -7438,7 +7429,6 @@
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Neutral/trader_male_neutral_greeting_07"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Neutral/trader_male_neutral_greeting_08"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Neutral/trader_male_neutral_greeting_09"/>
-		<AudioClip ClipName="Sounds/VO/Trader/Male/Neutral/trader_male_neutral_greeting_10"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Neutral/trader_male_neutral_greeting_11"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Neutral/trader_male_neutral_greeting_12"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Neutral/trader_male_neutral_greeting_13"/>
@@ -7447,7 +7437,6 @@
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Neutral/trader_male_neutral_greeting_16"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Neutral/trader_male_neutral_greeting_15"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Neutral/trader_male_neutral_greeting_16"/>
-		<AudioClip ClipName="Sounds/VO/Trader/Male/Neutral/trader_male_neutral_greeting_17"/>
 		<AudioClip ClipName="Sounds/VO/Trader/Male/Neutral/trader_male_neutral_greeting_18"/>
 		<LocalCrouchVolumeScale name="1.0"/>
 		<CrouchNoiseScale name="0.5"/>
@@ -7499,11 +7488,8 @@
 		<AudioSource name="Sounds/AudioSource_VO"/>
 		<Noise ID="3" range="14" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_alert_01"/>
-		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_alert_02"/>
-		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_alert_03"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_alert_04"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_alert_05"/>
-		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_alert_06"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_alert_07"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_alert_08"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_alert_09"/>
@@ -7520,9 +7506,7 @@
 	<SoundDataNode name="malehateattack">
 		<AudioSource name="Sounds/AudioSource_VO"/>
 		<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
-		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_attack_01"/>
-		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_attack_01"/>
-		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_attack_02"/>
+
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_attack_03"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_attack_04"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_attack_05"/>
@@ -7551,7 +7535,6 @@
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_death_08"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_death_09"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_death_10"/>
-		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_death_11"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_death_12"/>
 		<LocalCrouchVolumeScale name="1.0"/>
 		<CrouchNoiseScale name="0.5"/>
@@ -7591,7 +7574,6 @@
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_roam_06"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_roam_07"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_roam_08"/>
-		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_roam_09"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_roam_10"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_roam_11"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_roam_12"/>
@@ -7614,8 +7596,6 @@
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_sense_04"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_sense_05"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_sense_06"/>
-		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_sense_07"/>
-		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_sense_08"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_sense_09"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_sense_10"/>
 		<AudioClip ClipName="Sounds/VO/Male_Hate/male_hate_sense_11"/>
