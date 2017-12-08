@@ -205,6 +205,7 @@
 			<block name="humVee" prob="0.005"/>
 			<block name="m1Abrams" prob="0.0015"/>
 			<block name="gunship" prob="0.005"/>
+			<block name="gunshipMusic" prob="0.005"/>
 			<block name="aPC" prob="0.0015"/>
 			<block name="classicCar01" prob="0.2"/>
 			<block name="classicCar03" prob="0.2"/>
@@ -341,6 +342,7 @@
 			<block name="humVee" prob="0.005"/>
 			<block name="m1Abrams" prob="0.0015"/>
 			<block name="gunship" prob="0.005"/>
+			<block name="gunshipMusic" prob="0.005"/>
 			<block name="aPC" prob="0.0015"/>
 			<block name="classicCar01" prob="0.2"/>
 			<block name="classicCar03" prob="0.2"/>
@@ -773,6 +775,13 @@
 		<item name="plasticShoppingBag"/>
 		<item name="electricVibrator"/>
 		<item name="mechanicalOldWatch"/>
+		<item name="brassHinge"/>
+		<item name="brassMonkey"/>
+		<item name="brassCowBell"/>
+		<item name="leadSoldier"/>
+		<item name="leadMusketBalls" count="1,6"/>
+		<item name="trophy2"/>
+		<item name="fishingWeight"/>
 	</lootgroup>
 	<lootgroup name="questChallenge" count="1">
 		<item name="qc_silenceofthelambs" count="1"/>
