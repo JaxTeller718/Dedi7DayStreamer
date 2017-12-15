@@ -205,7 +205,6 @@
 			<block name="humVee" prob="0.005"/>
 			<block name="m1Abrams" prob="0.0015"/>
 			<block name="gunship" prob="0.005"/>
-			<block name="gunshipMusic" prob="0.005"/>
 			<block name="aPC" prob="0.0015"/>
 			<block name="classicCar01" prob="0.2"/>
 			<block name="classicCar03" prob="0.2"/>
@@ -346,7 +345,6 @@
 			<block name="humVee" prob="0.005"/>
 			<block name="m1Abrams" prob="0.0015"/>
 			<block name="gunship" prob="0.005"/>
-			<block name="gunshipMusic" prob="0.005"/>
 			<block name="aPC" prob="0.0015"/>
 			<block name="classicCar01" prob="0.2"/>
 			<block name="classicCar03" prob="0.2"/>
@@ -676,7 +674,6 @@
 		<item name="electricShaver"/>
 		<item name="electricToyMotor"/>
 		<item name="electricToaster"/>
-		<item name="electricVibrator"/>
 		<item name="electricBlender"/>
 	</lootgroup>
 	<lootgroup name="plasticJunk">
@@ -781,7 +778,6 @@
 		<item name="plasticToothBrush"/>
 		<item name="plasticLighter"/>
 		<item name="plasticShoppingBag"/>
-		<item name="electricVibrator"/>
 		<item name="mechanicalOldWatch"/>
 		<item name="brassHinge"/>
 		<item name="brassMonkey"/>
