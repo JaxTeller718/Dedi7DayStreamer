@@ -4,7 +4,7 @@
 		<entity name="zombieOldTimer" prob="0.3"/>
 		<entity name="zombieBiker" prob="0.3"/>
 		<entity name="zombieFarmer" prob="0.3"/>
-		<entity name="zombieStripper" prob="0.3"/>
+		<entity name="zombieBiker" prob="0.3"/>
 		<entity name="zombieUtilityWorker" prob="0.3"/>
 		<entity name="zombieNurse" prob="0.3"/>
 		<entity name="zombieFatHawaiian" prob="0.3"/>
@@ -20,7 +20,7 @@
 		<entity name="zombieOldTimer" prob="0.3"/>
 		<entity name="zombieBiker" prob="0.3"/>
 		<entity name="zombieFarmer" prob="0.3"/>
-		<entity name="zombieStripper" prob="0.3"/>
+		<entity name="zombieBiker" prob="0.3"/>
 		<entity name="zombieUtilityWorker" prob="0.3"/>
 		<entity name="zombieNurse" prob="0.3"/>
 		<entity name="zombieFatHawaiian" prob="0.3"/>
@@ -109,9 +109,9 @@
 		<entity name="sanZombieTrailerPark"/>
 		<entity name="sanZombieCannibalFemale"/>
 		<entity name="badZombieSeryph"/>
-		<entity name="sanZombieEvilGranny"/>
+		<entity name="badZombieOfficeGirl"/>
 		<entity name="sanZombieOldMan"/>
-		<entity name="sanZombieOldLady"/>
+		<entity name="badZombieOfficeGirl"/>
 		<entity name="sanZombieCripple"/>
 		<entity name="sanZombieVagrant"/>
 		<entity name="sanZombieHunterSven"/>
@@ -120,8 +120,6 @@
 		<entity name="sanZombieFemaleRocker"/>
 		<entity name="sanZombieRocker"/>
 		<entity name="gupZombieMartha"/>
-		<entity name="valZombieChildMale"/>
-		<entity name="valZombieChildFemale"/>
 		<entity name="valZombieLibrarian"/>
 		<entity name="valZombieJane"/>
 		<entity name="valZombieClarice"/>
@@ -133,7 +131,6 @@
 		<entity name="badZombieCaitlin"/>
 		<entity name="valZombieRaveReaper" prob="0.3"/>
 		<entity name="sanZombieCpl" prob="0.3"/>
-		<entity name="valZombieBigBitch" prob="0.3"/>
 		<entity name="sanZombieBanditSentry" prob="0.3"/>
 		<entity name="sanZombieBikerChick" prob="0.3"/>
 	</entitygroup>
@@ -166,7 +163,7 @@
 		<entity name="zombieOldTimer" prob="0.3"/>
 		<entity name="zombieBiker" prob="0.3"/>
 		<entity name="zombieFarmer" prob="0.3"/>
-		<entity name="zombieStripper" prob="0.3"/>
+		<entity name="zombieBiker" prob="0.3"/>
 		<entity name="zombieUtilityWorker" prob="0.3"/>
 		<entity name="zombieNurse" prob="0.3"/>
 		<entity name="zombieSteveCrawler"/>
@@ -175,16 +172,16 @@
 		<entity name="zombieOldTimer" prob="0.3"/>
 		<entity name="zombieBiker" prob="0.3"/>
 		<entity name="zombieFarmer" prob="0.3"/>
-		<entity name="zombieStripper" prob="0.3"/>
+		<entity name="zombieBiker" prob="0.3"/>
 		<entity name="zombieUtilityWorker" prob="0.3"/>
 		<entity name="zombieNurse" prob="0.3"/>
 		<entity name="zombieFatHawaiian" prob="0.3"/>
 		<entity name="sanZombieTrailerPark"  prob="0.3"/>
 		<entity name="sanZombieCannibalFemale"  prob="0.3"/>
 		<entity name="badZombieSeryph"  prob="0.3"/>
-		<entity name="sanZombieEvilGranny"  prob="0.3"/>
+		<entity name="badZombieOfficeGirl"  prob="0.3"/>
 		<entity name="sanZombieOldMan"  prob="0.3"/>
-		<entity name="sanZombieOldLady"  prob="0.3"/>
+		<entity name="badZombieOfficeGirl"  prob="0.3"/>
 		<entity name="sanZombieCripple"  prob="0.3"/>
 		<entity name="sanZombieVagrant"  prob="0.3"/>
 		<entity name="sanZombieHunterSven"  prob="0.3"/>
@@ -193,8 +190,6 @@
 		<entity name="sanZombieFemaleRocker"  prob="0.3"/>
 		<entity name="sanZombieRocker"  prob="0.3"/>
 		<entity name="gupZombieMartha"  prob="0.3"/>
-		<entity name="valZombieChildMale"  prob="0.3"/>
-		<entity name="valZombieChildFemale"  prob="0.3"/>
 		<entity name="valZombieLibrarian"  prob="0.3"/>
 		<entity name="valZombieJane"  prob="0.3"/>
 		<entity name="valZombieClarice"  prob="0.3"/>
@@ -206,7 +201,6 @@
 		<entity name="badZombieCaitlin"  prob="0.3"/>
 		<entity name="valZombieRaveReaper" prob="0.03"/>
 		<entity name="sanZombieCpl" prob="0.03"/>
-		<entity name="valZombieBigBitch" prob="0.03"/>
 		<entity name="sanZombieBanditSentry" prob="0.03"/>
 		<entity name="sanZombieBikerChick" prob="0.03"/>
 		<entity name="sanZombieBanditRaider" prob="0.03"/>
@@ -218,9 +212,7 @@
 		<entity name="sanZombieBodyBuilder" prob="0.03"/>
 		<entity name="sanZombieCrazed" prob="0.03"/>
 		<entity name="sanZombiePrisoner" prob="0.03"/>
-		<entity name="zombieHorny" prob="0.03"/>
 		<entity name="zombieScared" prob="0.05"/>
-		<entity name="zombieDitz" prob="0.03"/>
 		<entity name="CuriousGeorge" prob="0.01"/>
 	</entitygroup>
 	<entitygroup name="ZombiesNight">
@@ -242,9 +234,9 @@
 		<entity name="sanZombieTrailerPark"  prob="0.3"/>
 		<entity name="sanZombieCannibalFemale"  prob="0.3"/>
 		<entity name="badZombieSeryph"  prob="0.3"/>
-		<entity name="sanZombieEvilGranny"  prob="0.3"/>
+		<entity name="badZombieOfficeGirl"  prob="0.3"/>
 		<entity name="sanZombieOldMan"  prob="0.3"/>
-		<entity name="sanZombieOldLady"  prob="0.3"/>
+		<entity name="badZombieOfficeGirl"  prob="0.3"/>
 		<entity name="sanZombieCripple"  prob="0.3"/>
 		<entity name="sanZombieVagrant"  prob="0.3"/>
 		<entity name="sanZombieHunterSven"  prob="0.3"/>
@@ -253,8 +245,6 @@
 		<entity name="sanZombieFemaleRocker"  prob="0.3"/>
 		<entity name="sanZombieRocker"  prob="0.3"/>
 		<entity name="gupZombieMartha"  prob="0.3"/>
-		<entity name="valZombieChildMale"  prob="0.3"/>
-		<entity name="valZombieChildFemale"  prob="0.3"/>
 		<entity name="valZombieLibrarian"  prob="0.3"/>
 		<entity name="valZombieJane"  prob="0.3"/>
 		<entity name="valZombieClarice"  prob="0.3"/>
@@ -266,7 +256,6 @@
 		<entity name="badZombieCaitlin"  prob="0.3"/>
 		<entity name="valZombieRaveReaper" prob="0.03"/>
 		<entity name="sanZombieCpl" prob="0.03"/>
-		<entity name="valZombieBigBitch" prob="0.03"/>
 		<entity name="sanZombieBanditSentry" prob="0.03"/>
 		<entity name="sanZombieBikerChick" prob="0.03"/>
 		<entity name="sanZombieBanditRaider" prob="0.03"/>
@@ -278,9 +267,7 @@
 		<entity name="sanZombieBodyBuilder" prob="0.03"/>
 		<entity name="sanZombieCrazed" prob="0.03"/>
 		<entity name="sanZombiePrisoner" prob="0.03"/>
-		<entity name="zombieHorny" prob="0.03"/>
 		<entity name="zombieScared" prob="0.05"/>
-		<entity name="zombieDitz" prob="0.03"/>
 		<entity name="CuriousGeorge" prob="0.01"/>
 		<entity name="zombieFatHawaiian" prob="0.3"/>
 	</entitygroup>
@@ -300,9 +287,7 @@
 		<entity name="zombieSteveCrawler"/>
 		<entity name="zombieFatCop"/>
 		<entity name="zombieElectricUtilityWorker" prob="0.15"/>
-		<entity name="zombieHorny" prob="0.03"/>
 		<entity name="zombieScared" prob="0.05"/>
-		<entity name="zombieDitz" prob="0.03"/>
 		<entity name="CuriousGeorge" prob="0.01"/>
 		<entity name="zombieFatHawaiian"/>
 		<entity name="zombieFemaleFat"/>
@@ -351,9 +336,9 @@
 		<entity name="sanZombieTrailerPark"  prob="0.3"/>
 		<entity name="sanZombieCannibalFemale"  prob="0.3"/>
 		<entity name="badZombieSeryph"  prob="0.3"/>
-		<entity name="sanZombieEvilGranny"  prob="0.3"/>
+		<entity name="badZombieOfficeGirl"  prob="0.3"/>
 		<entity name="sanZombieOldMan"  prob="0.3"/>
-		<entity name="sanZombieOldLady"  prob="0.3"/>
+		<entity name="badZombieOfficeGirl"  prob="0.3"/>
 		<entity name="sanZombieCripple"  prob="0.3"/>
 		<entity name="sanZombieVagrant"  prob="0.3"/>
 		<entity name="sanZombieHunterSven"  prob="0.3"/>
@@ -362,8 +347,6 @@
 		<entity name="sanZombieFemaleRocker"  prob="0.3"/>
 		<entity name="sanZombieRocker"  prob="0.3"/>
 		<entity name="gupZombieMartha"  prob="0.3"/>
-		<entity name="valZombieChildMale"  prob="0.3"/>
-		<entity name="valZombieChildFemale"  prob="0.3"/>
 		<entity name="valZombieLibrarian"  prob="0.3"/>
 		<entity name="valZombieJane"  prob="0.3"/>
 		<entity name="valZombieClarice"  prob="0.3"/>
@@ -375,7 +358,6 @@
 		<entity name="badZombieCaitlin"  prob="0.3"/>
 		<entity name="valZombieRaveReaper" prob="0.03"/>
 		<entity name="sanZombieCpl" prob="0.03"/>
-		<entity name="valZombieBigBitch" prob="0.03"/>
 		<entity name="sanZombieBanditSentry" prob="0.03"/>
 		<entity name="sanZombieBikerChick" prob="0.03"/>
 		<entity name="sanZombieBanditRaider" prob="0.03"/>
@@ -387,9 +369,7 @@
 		<entity name="sanZombieBodyBuilder" prob="0.03"/>
 		<entity name="sanZombieCrazed" prob="0.03"/>
 		<entity name="sanZombiePrisoner" prob="0.03"/>
-		<entity name="zombieHorny" prob="0.03"/>
 		<entity name="zombieScared" prob="0.05"/>
-		<entity name="zombieDitz" prob="0.03"/>
 		<entity name="CuriousGeorge" prob="0.01"/>
 	</entitygroup>
 	<entitygroup name="ZombiesWastelandNightNoBears">
@@ -416,9 +396,9 @@
 		<entity name="sanZombieTrailerPark"  prob="0.3"/>
 		<entity name="sanZombieCannibalFemale"  prob="0.3"/>
 		<entity name="badZombieSeryph"  prob="0.3"/>
-		<entity name="sanZombieEvilGranny"  prob="0.3"/>
+		<entity name="badZombieOfficeGirl"  prob="0.3"/>
 		<entity name="sanZombieOldMan"  prob="0.3"/>
-		<entity name="sanZombieOldLady"  prob="0.3"/>
+		<entity name="badZombieOfficeGirl"  prob="0.3"/>
 		<entity name="sanZombieCripple"  prob="0.3"/>
 		<entity name="sanZombieVagrant"  prob="0.3"/>
 		<entity name="sanZombieHunterSven"  prob="0.3"/>
@@ -427,8 +407,6 @@
 		<entity name="sanZombieFemaleRocker"  prob="0.3"/>
 		<entity name="sanZombieRocker"  prob="0.3"/>
 		<entity name="gupZombieMartha"  prob="0.3"/>
-		<entity name="valZombieChildMale"  prob="0.3"/>
-		<entity name="valZombieChildFemale"  prob="0.3"/>
 		<entity name="valZombieLibrarian"  prob="0.3"/>
 		<entity name="valZombieJane"  prob="0.3"/>
 		<entity name="valZombieClarice"  prob="0.3"/>
@@ -440,7 +418,6 @@
 		<entity name="badZombieCaitlin"  prob="0.3"/>
 		<entity name="valZombieRaveReaper" prob="0.03"/>
 		<entity name="sanZombieCpl" prob="0.03"/>
-		<entity name="valZombieBigBitch" prob="0.03"/>
 		<entity name="sanZombieBanditSentry" prob="0.03"/>
 		<entity name="sanZombieBikerChick" prob="0.03"/>
 		<entity name="sanZombieBanditRaider" prob="0.03"/>
@@ -452,9 +429,7 @@
 		<entity name="sanZombieBodyBuilder" prob="0.03"/>
 		<entity name="sanZombieCrazed" prob="0.03"/>
 		<entity name="sanZombiePrisoner" prob="0.03"/>
-		<entity name="zombieHorny" prob="0.03"/>
 		<entity name="zombieScared" prob="0.05"/>
-		<entity name="zombieDitz" prob="0.03"/>
 		<entity name="CuriousGeorge" prob="0.01"/>
 	</entitygroup>
 	<entitygroup name="ZombiesWastelandNight2">
@@ -480,9 +455,9 @@
 		<entity name="sanZombieTrailerPark"  prob="0.3"/>
 		<entity name="sanZombieCannibalFemale"  prob="0.3"/>
 		<entity name="badZombieSeryph"  prob="0.3"/>
-		<entity name="sanZombieEvilGranny"  prob="0.3"/>
+		<entity name="badZombieOfficeGirl"  prob="0.3"/>
 		<entity name="sanZombieOldMan"  prob="0.3"/>
-		<entity name="sanZombieOldLady"  prob="0.3"/>
+		<entity name="badZombieOfficeGirl"  prob="0.3"/>
 		<entity name="sanZombieCripple"  prob="0.3"/>
 		<entity name="sanZombieVagrant"  prob="0.3"/>
 		<entity name="sanZombieHunterSven"  prob="0.3"/>
@@ -491,8 +466,6 @@
 		<entity name="sanZombieFemaleRocker"  prob="0.3"/>
 		<entity name="sanZombieRocker"  prob="0.3"/>
 		<entity name="gupZombieMartha"  prob="0.3"/>
-		<entity name="valZombieChildMale"  prob="0.3"/>
-		<entity name="valZombieChildFemale"  prob="0.3"/>
 		<entity name="valZombieLibrarian"  prob="0.3"/>
 		<entity name="valZombieJane"  prob="0.3"/>
 		<entity name="valZombieClarice"  prob="0.3"/>
@@ -504,7 +477,6 @@
 		<entity name="badZombieCaitlin"  prob="0.3"/>
 		<entity name="valZombieRaveReaper" prob="0.03"/>
 		<entity name="sanZombieCpl" prob="0.03"/>
-		<entity name="valZombieBigBitch" prob="0.03"/>
 		<entity name="sanZombieBanditSentry" prob="0.03"/>
 		<entity name="sanZombieBikerChick" prob="0.03"/>
 		<entity name="sanZombieBanditRaider" prob="0.03"/>
@@ -516,9 +488,7 @@
 		<entity name="sanZombieBodyBuilder" prob="0.03"/>
 		<entity name="sanZombieCrazed" prob="0.03"/>
 		<entity name="sanZombiePrisoner" prob="0.03"/>
-		<entity name="zombieHorny" prob="0.03"/>
 		<entity name="zombieScared" prob="0.05"/>
-		<entity name="zombieDitz" prob="0.03"/>
 		<entity name="CuriousGeorge" prob="0.01"/>
 	</entitygroup>
 	<entitygroup name="ZombiesWastelandNight2NoBears">
@@ -544,9 +514,9 @@
 		<entity name="sanZombieTrailerPark"  prob="0.3"/>
 		<entity name="sanZombieCannibalFemale"  prob="0.3"/>
 		<entity name="badZombieSeryph"  prob="0.3"/>
-		<entity name="sanZombieEvilGranny"  prob="0.3"/>
+		<entity name="badZombieOfficeGirl"  prob="0.3"/>
 		<entity name="sanZombieOldMan"  prob="0.3"/>
-		<entity name="sanZombieOldLady"  prob="0.3"/>
+		<entity name="badZombieOfficeGirl"  prob="0.3"/>
 		<entity name="sanZombieCripple"  prob="0.3"/>
 		<entity name="sanZombieVagrant"  prob="0.3"/>
 		<entity name="sanZombieHunterSven"  prob="0.3"/>
@@ -555,8 +525,6 @@
 		<entity name="sanZombieFemaleRocker"  prob="0.3"/>
 		<entity name="sanZombieRocker"  prob="0.3"/>
 		<entity name="gupZombieMartha"  prob="0.3"/>
-		<entity name="valZombieChildMale"  prob="0.3"/>
-		<entity name="valZombieChildFemale"  prob="0.3"/>
 		<entity name="valZombieLibrarian"  prob="0.3"/>
 		<entity name="valZombieJane"  prob="0.3"/>
 		<entity name="valZombieClarice"  prob="0.3"/>
@@ -568,7 +536,6 @@
 		<entity name="badZombieCaitlin"  prob="0.3"/>
 		<entity name="valZombieRaveReaper" prob="0.03"/>
 		<entity name="sanZombieCpl" prob="0.03"/>
-		<entity name="valZombieBigBitch" prob="0.03"/>
 		<entity name="sanZombieBanditSentry" prob="0.03"/>
 		<entity name="sanZombieBikerChick" prob="0.03"/>
 		<entity name="sanZombieBanditRaider" prob="0.03"/>
@@ -580,9 +547,7 @@
 		<entity name="sanZombieBodyBuilder" prob="0.03"/>
 		<entity name="sanZombieCrazed" prob="0.03"/>
 		<entity name="sanZombiePrisoner" prob="0.03"/>
-		<entity name="zombieHorny" prob="0.03"/>
 		<entity name="zombieScared" prob="0.05"/>
-		<entity name="zombieDitz" prob="0.03"/>
 		<entity name="CuriousGeorge" prob="0.01"/>
 	</entitygroup>
 	<entitygroup name="ZombiesHoard">
@@ -604,9 +569,9 @@
 		<entity name="sanZombieTrailerPark"  prob="0.3"/>
 		<entity name="sanZombieCannibalFemale"  prob="0.3"/>
 		<entity name="badZombieSeryph"  prob="0.3"/>
-		<entity name="sanZombieEvilGranny"  prob="0.3"/>
+		<entity name="badZombieOfficeGirl"  prob="0.3"/>
 		<entity name="sanZombieOldMan"  prob="0.3"/>
-		<entity name="sanZombieOldLady"  prob="0.3"/>
+		<entity name="badZombieOfficeGirl"  prob="0.3"/>
 		<entity name="sanZombieCripple"  prob="0.3"/>
 		<entity name="sanZombieVagrant"  prob="0.3"/>
 		<entity name="sanZombieHunterSven"  prob="0.3"/>
@@ -615,8 +580,6 @@
 		<entity name="sanZombieFemaleRocker"  prob="0.3"/>
 		<entity name="sanZombieRocker"  prob="0.3"/>
 		<entity name="gupZombieMartha"  prob="0.3"/>
-		<entity name="valZombieChildMale"  prob="0.3"/>
-		<entity name="valZombieChildFemale"  prob="0.3"/>
 		<entity name="valZombieLibrarian"  prob="0.3"/>
 		<entity name="valZombieJane"  prob="0.3"/>
 		<entity name="valZombieClarice"  prob="0.3"/>
@@ -628,7 +591,6 @@
 		<entity name="badZombieCaitlin"  prob="0.3"/>
 		<entity name="valZombieRaveReaper" prob="0.03"/>
 		<entity name="sanZombieCpl" prob="0.03"/>
-		<entity name="valZombieBigBitch" prob="0.03"/>
 		<entity name="sanZombieBanditSentry" prob="0.03"/>
 		<entity name="sanZombieBikerChick" prob="0.03"/>
 		<entity name="sanZombieBanditRaider" prob="0.03"/>
@@ -640,9 +602,7 @@
 		<entity name="sanZombieBodyBuilder" prob="0.03"/>
 		<entity name="sanZombieCrazed" prob="0.03"/>
 		<entity name="sanZombiePrisoner" prob="0.03"/>
-		<entity name="zombieHorny" prob="0.03"/>
 		<entity name="zombieScared" prob="0.05"/>
-		<entity name="zombieDitz" prob="0.03"/>
 		<entity name="CuriousGeorge" prob="0.01"/>
 		<entity name="valZombieBruteBoss" prob="0.03"/>
 		<entity name="valZombieBrute" prob="0.03"/>
@@ -926,7 +886,7 @@
 	<entitygroup name="ZombieBikerBarGroup">
 		<!-- The Boobie Trap -->
 		<entity name="zombieBiker" prob="3"/>
-		<entity name="zombieStripper" prob="4"/>
+		<entity name="zombieBiker" prob="4"/>
 		<entity name="zombieUtilityWorker"/>
 		<entity name="zombieFarmer"/>
 		<entity name="zombieBiker3"/>
@@ -934,11 +894,6 @@
 		<entity name="zombieSkateboarder"/>
 		<entity name="zombieBoe"/>
 		<entity name="zombieMoe"/>
-		<entity name="zombieStripper6"/>
-		<entity name="zombieStripper5"/>
-		<entity name="zombieStripper2"/>
-		<entity name="zombieStripper1"/>
-		<entity name="zombieStripper4"/>
 		<entity name="zombieBiker4"/>
 	</entitygroup>
 	<entitygroup name="ZombieAnimalsGroup">
