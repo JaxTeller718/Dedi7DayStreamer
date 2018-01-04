@@ -1427,6 +1427,28 @@
 		<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 	</entity_class>
+	<!-- Missing: zombieFarmerFeralRadiated -->
+	<entity_class name="zombieStripper" extends="zombieDarlene">
+		<property name="Mesh" value="Zombies/zombieStandardStripperRagdoll"/>
+		<property name="HandItem" value="handZombieStripper"/>
+		<property name="MaxHealth" value="485"/>
+		<property name="ExperienceGain" value="575"/>
+		<property name="LootListOnDeath" value="84"/>
+		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+	</entity_class>
+	<!-- Missing: zombieStripperRadiated -->
+	<entity_class name="zombieStripperFeral" extends="zombieStripper">
+		<property name="Mesh" value="Zombies/zombieStandardStripperRagdoll"/>
+		<property name="HandItem" value="handZombieStripperFeral"/>
+		<property name="MaxHealth" value="785"/>
+		<property name="ExperienceGain" value="975"/>
+		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
+		<property name="ApproachSpeed" value="0.6"/>
+		<property name="NightApproachSpeed" value="0.6"/>
+		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+	</entity_class>
+	<!-- Missing: zombieStripperFeralRadiated -->
+	<!-- TIMID ANIMALS -->
 	<entity_class name="animalTemplateTimid">
 		<property name="Mesh" value="Animals/Stag/STAG"/>
 		<property name="ModelType" value="Standard"/>
@@ -2031,7 +2053,7 @@
 		<property name="Prefab" value="Backpack"/>
 		<property name="Class" value="EntityBackpack"/>
 		<property name="Parent" value="Backpack"/>
-		<property name="TimeStayAfterDeath" value="3600"/>
+		<property name="TimeStayAfterDeath" value="2400"/>
 		<!-- player death backpacks will go poof after this many seconds. 0 means 0, not infinite. -->
 		<property name="IsEnemyEntity" value="false"/>
 		<property name="LootListOnDeath" value="41"/>
@@ -2044,7 +2066,7 @@
 		<property name="Prefab" value="Backpack"/>
 		<property name="Class" value="EntityLootContainer"/>
 		<property name="Parent" value="Backpack"/>
-		<property name="TimeStayAfterDeath" value="480"/>
+		<property name="TimeStayAfterDeath" value="240"/>
 		<property name="IsEnemyEntity" value="false"/>
 		<property name="LootListOnDeath" value="47"/>
 		<!-- used to determine container X/Y size -->
@@ -2286,6 +2308,16 @@
 		<property name="Archetype" value="valZombieLibrarian"/>
 		<property name="WalkType" value="5"/>
 	</entity_class>
+	<entity_class name="valZombieChildFemale" extends="badZombieFemaleUMA">
+		<property name="Archetype" value="valZombieChildFemale"/>
+		<property name="MaxHealth" value="285"/>
+		<property name="ExperienceGain" value="375"/>
+	</entity_class>
+	<entity_class name="valZombieChildMale" extends="badZombieUMA">
+		<property name="Archetype" value="valZombieChildMale"/>
+		<property name="MaxHealth" value="285"/>
+		<property name="ExperienceGain" value="375"/>
+	</entity_class>
 	<entity_class name="gupZombieMartha" extends="badZombieUMA">
 		<property name="Archetype" value="gupZombieMartha"/>
 		<property name="WalkType" value="1"/>
@@ -2375,6 +2407,17 @@
 		<property name="WalkType" value="5"/>
 		<property name="LootListOnDeath" value="81"/>
 	</entity_class>
+	<!-- handZombieStrong, -speed 0.55 at night -->
+	<entity_class name="sanZombieEvilGranny" extends="badZombieFemaleUMA">
+		<property name="Archetype" value="sanZombieEvilGranny"/>
+		<property name="HandItem" value="handZombieStrong"/>
+		<property name="WalkType" value="1"/>
+		<property name="WanderSpeed" value="0.2"/>
+		<property name="ApproachSpeed" value="0.55"/>
+		<property name="NightWanderSpeed" value="0.2"/>
+		<property name="NightApproachSpeed" value="0.55"/>
+	</entity_class>
+	<!-- -HP 100, +speed 0.45 -->
 	<entity_class name="badZombieSeryph" extends="badZombieFemaleUMA">
 		<property name="Archetype" value="ZombieSeryph"/>
 		<property name="WalkType" value="6"/>
@@ -2385,7 +2428,16 @@
 		<property name="NightApproachSpeed" value="0.7"/>
 		<property name="ExperienceGain" value="575"/>
 	</entity_class>
-	<entity_class name="sanZombieCpl" extends="badZombieFemaleUMA" >
+	<!-- +HP 200, handZombieStrong -->
+	<entity_class name="valZombieBigBitch" extends="badZombieFemaleUMA">
+		<property name="Archetype" value="valZombieBigBitch"/>
+		<property name="MaxHealth" value="785"/>
+		<property name="WalkType" value="1"/>
+		<property name="HandItem" value="handZombieStrong"/>
+		<property name="ExperienceGain" value="675"/>
+	</entity_class>
+	<!-- +HP 350, loot 73 -->
+	<entity_class name="sanZombieCpl" extends="badZombieFemaleUMA">
 		<property name="Archetype" value="sanZombieCpl"/>
 		<property name="LootListOnDeath" value="73"/>
 		<property name="MaxHealth" value="485"/>
@@ -2635,6 +2687,138 @@
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 	</entity_class>
+	<entity_class name="partygirl" extends="zombieTemplateMale">
+		<property name="Archetype" value="zombieStripperDrunk"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Prefab" value="NPC"/>
+		<property name="Class" value="EntityZombie"/>
+		<property name="Parent" value="Enemies"/>
+		<property name="IsEnemyEntity" value="true"/>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+		<property name="Class" value="EntityZombieCop"/>
+		<property name="HandItem" value="handZombieDrunk"/>
+		<property name="HasRagdoll" value="false"/>
+		<property name="WalkType" value="1"/>
+		<property name="RightHandJointName" value="Jaw"/>
+		<property name="AvatarController" value="AvatarZombieUMAController"/>
+		<property name="ModelType" value="ZombieUMA"/>
+		<property name="CanClimbLadders" value="true"/>
+		<property name="PhysicsBody" value="zombieUMA"/>
+		<property name="RootMotion" value="true"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="MaxHealth" value="1385"/>
+		<property name="CorpseBlock" value="GoreBlock1Prefab"/>
+		<property name="CorpseBlockChance" value="1"/>
+		<property name="ExperienceGain" value="875"/>
+		<property name="Weight" value="70"/>
+		<property name="PushFactor" value="20"/>
+		<property name="TimeStayAfterDeath" value="4"/>
+		<property name="AttackTimeoutDay" value="1.5"/>
+		<!-- in s -->
+		<property name="AttackTimeoutNight" value="1.1"/>
+		<property name="LootListOnDeath" value="174"/>
+		<property name="AITask-1" value="BreakDoor"/>
+		<property name="AITask-2" value="BreakBlock"/>
+		<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="5"/>
+		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
+		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag"/>
+		<property name="AITask-6" value="ApproachSpot"/>
+		<property name="AITask-7" value="Wander"/>
+		<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+		<property name="Explosion.ParticleIndex" value="8"/>
+		<property name="Explosion.RadiusBlocks" value="2"/>
+		<property name="Explosion.RadiusEntities" value="6"/>
+		<property name="Explosion.BlockDamage" value="5"/>
+		<property name="Explosion.EntityDamage" value="15"/>
+		<property name="Explosion.DamageBonus.earth" value="0"/>
+		<property name="HeadDismemberBonusChance" value="0.08"/>
+		<property name="HeadDismemberThreshold" value="0"/>
+		<property name="LowerLegDismemberThreshold" value="0"/>
+		<property name="UpperLegDismemberThreshold" value="0"/>
+		<property name="LowerArmDismemberThreshold" value="0"/>
+		<property name="UpperArmDismemberThreshold" value="0"/>
+		<property name="LegCrawlerThreshold" value="0"/>
+		<property name="LegCrippleThreshold" value="0"/>
+		<property name="KnockdownProneDamageThreshold" value="0"/>
+		<property name="KnockdownKneelDamageThreshold" value="0"/>
+		<property name="LegsExplosionDamageMultiplier" value="2"/>
+		<property name="ArmsExplosionDamageMultiplier" value="2"/>
+		<property name="HeadExplosionDamageMultiplier" value="2"/>
+		<property name="ChestExplosionDamageMultiplier" value="2"/>
+		<property name="ApproachSpeed" value="2.0"/>
+		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+	</entity_class>
+	<entity_class name="badasspartygirl" extends="zombieTemplateMale">
+		<property name="Archetype" value="zombieStripperDrunk"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Prefab" value="NPC"/>
+		<property name="Class" value="EntityZombie"/>
+		<property name="Parent" value="Enemies"/>
+		<property name="IsEnemyEntity" value="true"/>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+		<property name="Class" value="EntityZombieCop"/>
+		<property name="HandItem" value="handZombieDrunk"/>
+		<property name="HasRagdoll" value="true"/>
+		<property name="WalkType" value="1"/>
+		<property name="RightHandJointName" value="Jaw"/>
+		<property name="AvatarController" value="AvatarZombieUMAController"/>
+		<property name="ModelType" value="ZombieUMA"/>
+		<property name="CanClimbLadders" value="true"/>
+		<property name="PhysicsBody" value="zombieUMA"/>
+		<property name="RootMotion" value="true"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="MaxHealth" value="1785"/>
+		<property name="CorpseBlock" value="GoreBlock1Prefab"/>
+		<property name="CorpseBlockChance" value="1"/>
+		<property name="ExperienceGain" value="875"/>
+		<property name="Weight" value="70"/>
+		<property name="PushFactor" value="20"/>
+		<property name="TimeStayAfterDeath" value="4"/>
+		<property name="AttackTimeoutDay" value="1.5"/>
+		<!-- in s -->
+		<property name="AttackTimeoutNight" value="1.1"/>
+		<property name="LootListOnDeath" value="17"/>
+		<property name="AITask-1" value="BreakDoor"/>
+		<property name="AITask-2" value="BreakBlock"/>
+		<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="5"/>
+		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
+		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag"/>
+		<property name="AITask-6" value="ApproachSpot"/>
+		<property name="AITask-7" value="Wander"/>
+		<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+		<property name="Explosion.ParticleIndex" value="8"/>
+		<property name="Explosion.RadiusBlocks" value="2"/>
+		<property name="Explosion.RadiusEntities" value="6"/>
+		<property name="Explosion.BlockDamage" value="5"/>
+		<property name="Explosion.EntityDamage" value="25"/>
+		<property name="Explosion.DamageBonus.earth" value="0"/>
+		<property name="HeadDismemberBonusChance" value="0.08"/>
+		<property name="HeadDismemberThreshold" value="0"/>
+		<property name="LowerLegDismemberThreshold" value="0"/>
+		<property name="UpperLegDismemberThreshold" value="0"/>
+		<property name="LowerArmDismemberThreshold" value="0"/>
+		<property name="UpperArmDismemberThreshold" value="0"/>
+		<property name="LegCrawlerThreshold" value="0"/>
+		<property name="LegCrippleThreshold" value="0"/>
+		<property name="KnockdownProneDamageThreshold" value="0"/>
+		<property name="KnockdownKneelDamageThreshold" value="0"/>
+		<property name="LegsExplosionDamageMultiplier" value="2"/>
+		<property name="ArmsExplosionDamageMultiplier" value="2"/>
+		<property name="HeadExplosionDamageMultiplier" value="2"/>
+		<property name="ChestExplosionDamageMultiplier" value="2"/>
+		<property name="ApproachSpeed" value="2.0"/>
+		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+	</entity_class>
 	<entity_class name="othercustomzombietemplate" extends="zombieTemplateMale">
 		<property name="EntityType" value="Zombie"/>
 		<property name="Prefab" value="NPC"/>
@@ -2687,6 +2871,22 @@
 		<property name="ApproachSpeed" value="2.0"/>
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 	</entity_class>
+	<entity_class name="zombieHorny" extends="othercustomzombietemplate">
+		<property name="Archetype" value="zombieHorny"/>
+		<property name="MaxHealth" value="485"/>
+		<property name="ExperienceGain" value="575"/>
+		<property name="SoundRandom" value="Player_Female/player2painlg"/>
+		<property name="SoundAlert" value="Player_Female/player2painlg"/>
+		<property name="SoundAttack" value="Player_Female/player2painlg"/>
+		<property name="SoundHurt" value="Player_Female/player2painlg"/>
+		<property name="SoundDeath" value="Player_Female/player2painlg"/>
+		<property name="SoundSense" value="Player_Female/player2painlg"/>
+		<property name="HandItem" value="handZombieHorny"/>
+		<property name="LootListOnDeath" value="175"/>
+		<property name="WalkType" value="5"/>
+		<property name="CorpseBlock" value="GoreBlock1Prefab"/>
+		<property name="CorpseBlockChance" value="1"/>
+	</entity_class>
 	<entity_class name="zombieScared" extends="othercustomzombietemplate">
 		<property name="Archetype" value="scaredzombie"/>
 		<property name="AITask-6" value="ApproachSpot"/>
@@ -2724,6 +2924,57 @@
 		<property name="LegCrippleThreshold" value="0"/>
 		<property name="KnockdownProneDamageThreshold" value="0.08"/>
 		<property name="KnockdownKneelDamageThreshold" value="0.08"/>
+	</entity_class>
+	<entity_class name="zombieDitz" extends="othercustomzombietemplate">
+		<property name="Archetype" value="ditz"/>
+		<property name="MaxHealth" value="785"/>
+		<property name="ExperienceGain" value="875"/>
+		<property name="SoundRandom" value="Player_Female/player2painlg"/>
+		<property name="SoundAlert" value="Player_Female/player2painlg"/>
+		<property name="SoundAttack" value="Player_Female/player2painlg"/>
+		<property name="SoundHurt" value="Player_Female/player2painlg"/>
+		<property name="SoundDeath" value="Player_Female/player2painlg"/>
+		<property name="SoundSense" value="Player_Female/player2painlg"/>
+		<property name="WalkType" value="5"/>
+		<property name="HandItem" value="handZombieDitz"/>
+		<property name="LootListOnDeath" value="175"/>
+		<property name="ApproachSpeed" value="20.0"/>
+		<property name="CorpseBlock" value="GoreBlock1Prefab"/>
+		<property name="CorpseBlockChance" value="1"/>
+	</entity_class>
+	<entity_class name="angryzombieDitz" extends="othercustomzombietemplate">
+		<property name="Archetype" value="ditz"/>
+		<property name="MaxHealth" value="785"/>
+		<property name="ExperienceGain" value="875"/>
+		<property name="SoundRandom" value="Player_Female/player2painlg"/>
+		<property name="SoundAlert" value="Player_Female/player2painlg"/>
+		<property name="SoundAttack" value="Player_Female/player2painlg"/>
+		<property name="SoundHurt" value="Player_Female/player2painlg"/>
+		<property name="SoundDeath" value="Player_Female/player2painlg"/>
+		<property name="SoundSense" value="Player_Female/player2painlg"/>
+		<property name="WalkType" value="5"/>
+		<property name="HandItem" value="handAnimalWolf"/>
+		<property name="LootListOnDeath" value="17"/>
+		<property name="ApproachSpeed" value="20.0"/>
+		<property name="CorpseBlock" value="GoreBlock1Prefab"/>
+		<property name="CorpseBlockChance" value="1"/>
+	</entity_class>
+	<entity_class name="badasszombieDitz" extends="othercustomzombietemplate">
+		<property name="Archetype" value="ditz"/>
+		<property name="MaxHealth" value="1385"/>
+		<property name="ExperienceGain" value="1275"/>
+		<property name="SoundRandom" value="Player_Female/player2painlg"/>
+		<property name="SoundAlert" value="Player_Female/player2painlg"/>
+		<property name="SoundAttack" value="Player_Female/player2painlg"/>
+		<property name="SoundHurt" value="Player_Female/player2painlg"/>
+		<property name="SoundDeath" value="Player_Female/player2painlg"/>
+		<property name="SoundSense" value="Player_Female/player2painlg"/>
+		<property name="WalkType" value="5"/>
+		<property name="HandItem" value="handZombieDitz"/>
+		<property name="LootListOnDeath" value="17"/>
+		<property name="ApproachSpeed" value="20.0"/>
+		<property name="CorpseBlock" value="GoreBlock1Prefab"/>
+		<property name="CorpseBlockChance" value="1"/>
 	</entity_class>
 	<entity_class name="CuriousGeorge" extends="othercustomzombietemplate">
 		<property name="Archetype" value="curiousgeorge"/>
@@ -2768,6 +3019,15 @@
 		<property name="NightApproachSpeed" value="0.8"/>
 		<property name="PanicSpeed" value="0.6"/>
 	</entity_class>
+	<entity_class name="zombieStripper1" extends="zombieStripper">
+		<!-- JZMOD RUN -->
+		<property name="WalkType" value="1"/>
+		<property name="WanderSpeed" value="0.09"/>
+		<property name="ApproachSpeed" value="0.7"/>
+		<property name="NightWanderSpeed" value="0.09"/>
+		<property name="NightApproachSpeed" value="0.8"/>
+		<property name="PanicSpeed" value="0.6"/>
+	</entity_class>
 	<entity_class name="zombieBusinessMan1" extends="zombieBusinessMan">
 		<!-- JZMOD WALK -->
 		<property name="WalkType" value="1"/>
@@ -2801,6 +3061,15 @@
 		<property name="WanderSpeed" value="0.1"/>
 		<property name="ApproachSpeed" value="0.49"/>
 		<property name="NightWanderSpeed" value="0.08"/>
+		<property name="NightApproachSpeed" value="0.8"/>
+		<property name="PanicSpeed" value="0.6"/>
+	</entity_class>
+	<entity_class name="zombieStripper2" extends="zombieStripper">
+		<!-- JZMOD WALK -->
+		<property name="WalkType" value="2"/>
+		<property name="WanderSpeed" value="0.09"/>
+		<property name="ApproachSpeed" value="0.28"/>
+		<property name="NightWanderSpeed" value="0.09"/>
 		<property name="NightApproachSpeed" value="0.8"/>
 		<property name="PanicSpeed" value="0.6"/>
 	</entity_class>
@@ -3008,6 +3277,15 @@
 		<property name="NightApproachSpeed" value="0.8"/>
 		<property name="PanicSpeed" value="0.6"/>
 	</entity_class>
+	<entity_class name="zombieStripper4" extends="zombieStripper">
+		<!-- JZMOD CRAWLER -->
+		<property name="WalkType" value="4"/>
+		<property name="WanderSpeed" value="0.09"/>
+		<property name="ApproachSpeed" value="0.28"/>
+		<property name="NightWanderSpeed" value="0.09"/>
+		<property name="NightApproachSpeed" value="0.8"/>
+		<property name="PanicSpeed" value="0.6"/>
+	</entity_class>
 	<entity_class name="zombieFootballPlayer4" extends="zombieFootballPlayer">
 		<!-- JZMOD CRAWLER -->
 		<property name="WalkType" value="4"/>
@@ -3073,6 +3351,15 @@
 		<property name="NightApproachSpeed" value="0.8"/>
 		<property name="PanicSpeed" value="0.6"/>
 	</entity_class>
+	<entity_class name="zombieStripper5" extends="zombieStripper">
+		<!-- JZMOD WALK -->
+		<property name="WalkType" value="5"/>
+		<property name="WanderSpeed" value="0.09"/>
+		<property name="ApproachSpeed" value="0.28"/>
+		<property name="NightWanderSpeed" value="0.09"/>
+		<property name="NightApproachSpeed" value="0.8"/>
+		<property name="PanicSpeed" value="0.6"/>
+	</entity_class>
 	<entity_class name="zombieFootballPlayer5" extends="zombieFootballPlayer">
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="5"/>
@@ -3118,6 +3405,15 @@
 		<property name="NightWanderSpeed" value="0.09"/>
 		<property name="NightApproachSpeed" value="0.8"/>
 		<property name="PanicSpeed" value="0.56"/>
+	</entity_class>
+	<entity_class name="zombieStripper6" extends="zombieStripper">
+		<!-- JZMOD RUN -->
+		<property name="WalkType" value="6"/>
+		<property name="WanderSpeed" value="0.09"/>
+		<property name="ApproachSpeed" value="0.76"/>
+		<property name="NightWanderSpeed" value="0.09"/>
+		<property name="NightApproachSpeed" value="0.8"/>
+		<property name="PanicSpeed" value="0.6"/>
 	</entity_class>
 	<entity_class name="zombieScreamer6" extends="zombieScreamer">
 		<!-- JZMOD RUN -->
@@ -3811,12 +4107,12 @@
 		<property name="Weight"       value="10"/>
 		<property name="CanClimbLadders"     value="true"/>
 		<property name="ExperienceGain" value="225"/>
-		<property name="SoundRandom" value="newzombieroam"/>
-		<property name="SoundAlert" value="newzombiealert"/>
-		<property name="SoundAttack" value="newzombieattack"/>
-		<property name="SoundHurt" value="newzombiepain"/>
-		<property name="SoundDeath" value="newzombiedeath"/>
-		<property name="SoundSense" value="newzombiesense"/>
+		<property name="SoundRandom" value="babyroam"/>
+		<property name="SoundAlert" value="babyalert"/>
+		<property name="SoundAttack" value="babyattack"/>
+		<property name="SoundHurt" value="babypain"/>
+		<property name="SoundDeath" value="babydeath"/>
+		<property name="SoundSense" value="babysense"/>
 		<property name="LootListOnDeath" value="191"/>
 	</entity_class>
 	<entity_class name="zombieMechanic01" extends="SDXTemplate">
@@ -3862,12 +4158,12 @@
 		<property name="AnimationRun" value="run"/>
 		<property name="AnimationWalk" value="walk"/>
 		<!-- property name="AnimationSpecialAttack" value="false" /-->
-		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
-		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
-		<property name="SoundAttack" value="newzombieslurp"/>
-		<property name="SoundHurt" value="newzombiegrowl"/>
-		<property name="SoundDeath" value="newzombiebreath"/>
-		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/>
+		<property name="SoundRandom" value="afroShamanSounds"/>
+		<property name="SoundAlert" value="afroShamanSounds"/>
+		<property name="SoundAttack" value="newzombieattack"/>
+		<property name="SoundHurt" value="newzombiepain"/>
+		<property name="SoundDeath" value="newzombiedeath"/>
+		<property name="SoundSense" value="afroShamanSounds"/>
 		<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
 		<property name="WanderSpeed" value="0.8"/>
 		<property name="ApproachSpeed" value="0.9"/>
@@ -3892,12 +4188,12 @@
 		<property name="AnimationRun" value="run"/>
 		<property name="AnimationWalk" value="walk"/>
 		<!-- property name="AnimationSpecialAttack" value="false" /-->
-		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
-		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
-		<property name="SoundAttack" value="newzombieslurp"/>
-		<property name="SoundHurt" value="newzombiegrowl"/>
-		<property name="SoundDeath" value="newzombiebreath"/>
-		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/>
+		<property name="SoundRandom" value="afroShamanSounds"/>
+		<property name="SoundAlert" value="afroShamanSounds"/>
+		<property name="SoundAttack" value="newzombieattack"/>
+		<property name="SoundHurt" value="newzombiepain"/>
+		<property name="SoundDeath" value="newzombiedeath"/>
+		<property name="SoundSense" value="afroShamanSounds"/>
 		<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
 		<property name="WanderSpeed" value="0.8"/>
 		<property name="ApproachSpeed" value="0.9"/>
@@ -3922,12 +4218,12 @@
 		<property name="AnimationRun" value="run"/>
 		<property name="AnimationWalk" value="walk"/>
 		<!-- property name="AnimationSpecialAttack" value="false" /-->
-		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
-		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
-		<property name="SoundAttack" value="newzombieslurp"/>
-		<property name="SoundHurt" value="newzombiegrowl"/>
-		<property name="SoundDeath" value="newzombiebreath"/>
-		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/>
+		<property name="SoundRandom" value="afroShamanSounds"/>
+		<property name="SoundAlert" value="afroShamanSounds"/>
+		<property name="SoundAttack" value="newzombieattack"/>
+		<property name="SoundHurt" value="newzombiepain"/>
+		<property name="SoundDeath" value="newzombiedeath"/>
+		<property name="SoundSense" value="afroShamanSounds"/>
 		<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
 		<property name="WanderSpeed" value="0.8"/>
 		<property name="ApproachSpeed" value="0.9"/>
@@ -3952,12 +4248,12 @@
 		<property name="AnimationRun" value="Creature_armature|Run"/>
 		<property name="AnimationWalk" value="Creature_armature|walk"/>
 		<property name="AnimationSpecialAttack" value="Creature_armature|bite"/>
-		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
-		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
+		<property name="SoundRandom" value="afroShamanSounds"/>
+		<property name="SoundAlert" value="afroShamanSounds"/>
 		<property name="SoundAttack" value="Enemies/Spider_Zombie/spiderattack"/>
 		<property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath"/>
 		<property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain"/>
-		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/>
+		<property name="SoundSense" value="afroShamanSounds"/>
 	</entity_class>
 	<entity_class name="Nightmare_c2" extends="SDXTemplate">
 		<property name="Mesh" value="#Nightmares?thc2"/>
@@ -3972,12 +4268,12 @@
 		<property name="AnimationRun" value="NC2_Armat|thc2_run"/>
 		<property name="AnimationWalk" value="NC2_Armat|thc2_walk"/>
 		<property name="AnimationSpecialAttack" value="NC_Arma|thc2_attack3"/>
-		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
-		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
+		<property name="SoundRandom" value="afroShamanSounds"/>
+		<property name="SoundAlert" value="afroShamanSounds"/>
 		<property name="SoundAttack" value="newzombieslurp"/>
 		<property name="SoundHurt" value="newzombiegrowl"/>
 		<property name="SoundDeath" value="newzombiebreath"/>
-		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/>
+		<property name="SoundSense" value="afroShamanSounds"/>
 	</entity_class>
 	<entity_class name="Nightmare_c3" extends="SDXTemplate">
 		<property name="Mesh" value="#Nightmares?thc3"/>
@@ -3991,12 +4287,12 @@
 		<property name="AnimationRun" value="thc3_arma|run_forward"/>
 		<property name="AnimationWalk" value="thc3_arma|walk_forward"/>
 		<property name="AnimationSpecialAttack" value="thc3_arma|attack3"/>
-		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
-		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
+		<property name="SoundRandom" value="afroShamanSounds"/>
+		<property name="SoundAlert" value="afroShamanSounds"/>
 		<property name="SoundAttack" value="newzombieslurp"/>
 		<property name="SoundHurt" value="newzombiegrowl"/>
 		<property name="SoundDeath" value="newzombiebreath"/>
-		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/>
+		<property name="SoundSense" value="afroShamanSounds"/>
 	</entity_class>
 	<entity_class name="Nightmare_c4" extends="SDXTemplate">
 		<property name="Mesh" value="#Nightmares?thc4"/>
@@ -4011,12 +4307,12 @@
 		<property name="AnimationRun" value="thc4_arma|st_run"/>
 		<property name="AnimationWalk" value="thc4_arma|st_walk"/>
 		<property name="AnimationSpecialAttack" value="thc4_arma|do_attack3"/>
-		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
-		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
+		<property name="SoundRandom" value="afroShamanSounds"/>
+		<property name="SoundAlert" value="afroShamanSounds"/>
 		<property name="SoundAttack" value="newzombieslurp"/>
 		<property name="SoundHurt" value="newzombiegrowl"/>
 		<property name="SoundDeath" value="newzombiebreath"/>
-		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/>
+		<property name="SoundSense" value="afroShamanSounds"/>
 	</entity_class>
 	<entity_class name="Nightmare_c5" extends="SDXTemplate">
 		<property name="Mesh" value="#Nightmares?thc5"/>
@@ -4030,12 +4326,12 @@
 		<property name="AnimationRun" value="thc5_armature_O|run"/>
 		<property name="AnimationWalk" value="thc5_armature_O|walk"/>
 		<property name="AnimationSpecialAttack" value="thc5_armature_O|attack3"/>
-		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
-		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
+		<property name="SoundRandom" value="afroShamanSounds"/>
+		<property name="SoundAlert" value="afroShamanSounds"/>
 		<property name="SoundAttack" value="newzombieslurp"/>
 		<property name="SoundHurt" value="newzombiegrowl"/>
 		<property name="SoundDeath" value="newzombiebreath"/>
-		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/>
+		<property name="SoundSense" value="afroShamanSounds"/>
 	</entity_class>
 	<entity_class name="Mutant" extends="SDXTemplate">
 		<property name="Mesh" value="#Mutant?Model"/>
@@ -4048,12 +4344,12 @@
 		<property name="AnimationRun" value="run"/>
 		<property name="AnimationWalk" value="walk"/>
 		<!-- property name="AnimationSpecialAttack" value="false" /-->
-		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
-		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
+		<property name="SoundRandom" value="afroShamanSounds"/>
+		<property name="SoundAlert" value="afroShamanSounds"/>
 		<property name="SoundAttack" value="newzombieslurp"/>
 		<property name="SoundHurt" value="newzombiegrowl"/>
 		<property name="SoundDeath" value="newzombiebreath"/>
-		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/>
+		<property name="SoundSense" value="afroShamanSounds"/>
 	</entity_class>
 	<entity_class name="Beast" extends="SDXTemplate">
 		<property name="Mesh" value="#Nightmares?Beast"/>

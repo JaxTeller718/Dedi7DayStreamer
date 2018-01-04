@@ -205,6 +205,7 @@
 			<block name="humVee" prob="0.005"/>
 			<block name="m1Abrams" prob="0.0015"/>
 			<block name="gunship" prob="0.005"/>
+			<block name="gunshipMusic" prob="0.005"/>
 			<block name="aPC" prob="0.0015"/>
 			<block name="classicCar01" prob="0.2"/>
 			<block name="classicCar03" prob="0.2"/>
@@ -345,6 +346,7 @@
 			<block name="humVee" prob="0.005"/>
 			<block name="m1Abrams" prob="0.0015"/>
 			<block name="gunship" prob="0.005"/>
+			<block name="gunshipMusic" prob="0.005"/>
 			<block name="aPC" prob="0.0015"/>
 			<block name="classicCar01" prob="0.2"/>
 			<block name="classicCar03" prob="0.2"/>
